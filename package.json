@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/Yehuda1977/create-twik/issues"
   },
-  "homepage": "https://github.com/Yehuda1977/create-twik#readme"
+  "homepage": "https://github.com/Yehuda1977/create-twik#readme",
+  "dependencies": {
+    "inquirer": "^8.1.1"
+  },
+  "bin": {
+    "generate": "./index.js"
+ }
 }

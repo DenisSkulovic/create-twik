@@ -1,0 +1,31 @@
+{
+  "watch": {
+    "build": {
+      "patterns": [
+        "src"
+      ],
+      "extensions": "js,scss,html",
+      "quiet": false
+    }
+  },
+  "name": "bundle_variant",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "build": "node-sass src/index.scss -o src/.temp   &&   node .technical/html_css_to_js.js   &&   webpack",
+    "dev": "npm-watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "jquery": "*",
+    "node-sass": "*",
+    "npm-watch": "*",
+    "sass": "*",
+    "webpack": "*",
+    "webpack-cli": "*"
+  }
+}
