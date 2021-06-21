@@ -2,7 +2,7 @@
   "name": "create-twik-project",
   "version": "1.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "./bin/create-twik-project.js",
   "scripts": {
     "test": "echo \"No test specified\""
   },

@@ -5,7 +5,7 @@ const inquirer = require('inquirer');
 
 
 
-const QUESTIONS = require('../lib/questions');
+const QUESTIONS = require(path.join(__dirname, 'lib/questions');
 
 const CURR_DIR = process.cwd();
 
@@ -13,7 +13,7 @@ inquirer.prompt(QUESTIONS)
   .then(answers => {
     const projectChoice = answers['project-choice'];
     const projectName = answers['project-name'];
-    const templatePath = `../templates/${projectChoice}`;
+    const templatePath = (path.join(__dirname, `templates/${projectChoice}`));
   
     fs.mkdirSync(`${CURR_DIR}/${projectName}`);
 
