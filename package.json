@@ -1,5 +1,5 @@
 {
-  "name": "twik-boilerplate",
+  "name": "create-twik-project",
   "version": "1.0.1",
   "description": "",
   "main": "index.js",
@@ -18,9 +18,10 @@
   },
   "homepage": "https://github.com/Yehuda1977/create-twik#readme",
   "dependencies": {
+    "fs-extra": "^10.0.0",
     "inquirer": "^8.1.1"
   },
   "bin": {
-    "generate": "./index.js"
+    "create-twik-project": "./bin/create-twik-project.js"
   }
 }
